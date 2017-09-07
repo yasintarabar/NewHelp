@@ -1,0 +1,32 @@
+<!--
+Ayan Bhattacharjee
+2017
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="google-signin-client_id" content="608787834828-71306h3l0d8tfg0ooudb8enkm7dd1ta3.apps.googleusercontent.com">
+    <title>Platform</title>
+    <!-- jQuery, Google Client API, Vue.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.1/vue.js"></script>
+  </head>
+  <body>
+    <!-- the beginning-->
+    <div id='app'>
+
+<button v-on:click="makeroom("potato")">Make a Room</button>
+<h1>{{ Name }}</h1>
+
+
+
+
+    </div>
+    <!-- the end of the application -->
+    <script src="/socket.io/socket.io.js"></script> <!-- necessary for socket.io-client -->
+    <script src="app.js"></script> <!-- the vue app code -->
+  </body>
+</html>
